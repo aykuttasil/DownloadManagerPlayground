@@ -6,7 +6,7 @@ import android.content.Context
 import android.content.Intent
 import android.widget.Toast
 
-class DownloadComplatedReceiver : BroadcastReceiver() {
+class DownloadCompletedReceiver : BroadcastReceiver() {
     override fun onReceive(context: Context?, intent: Intent?) {
         val downloadID = intent?.getLongExtra("extra_download_id", 0)
         Toast.makeText(context, "İndirildi. Id: $downloadID", Toast.LENGTH_LONG).show()
